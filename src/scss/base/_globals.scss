@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    position: relative;
+}
+
+.container {
+    position: relative;
+}
+
+section {
+    padding: 5.125rem 1.5rem 6.188rem 1.5rem;
+    margin: 0;
+}
+
+.bg1 {
+    position: absolute;
+    width: 100%;
+    height: 14.5rem;
+    background-image: url('/assets/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

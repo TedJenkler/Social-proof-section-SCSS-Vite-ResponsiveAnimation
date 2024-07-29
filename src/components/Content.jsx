@@ -2,11 +2,13 @@ import React from 'react'
 
 function Content({ img, name, verified, text}) {
   return (
-    <div>
+    <div className='content'>
         <div>
             <img src={img} alt={name} />
-            <p>{name}</p>
-            <p>{verified}</p>
+            <div>
+                <p>{name}</p>
+                <p className='pink'>{verified}</p>
+            </div>
         </div>
         <p>{text}</p>
     </div>
