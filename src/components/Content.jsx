@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Content({ img, name, verified, text}) {
+function Content({ id, img, name, verified, text}) {
   return (
-    <div className='content'>
+    <div id={id} className='content'>
         <div>
             <img src={img} alt={name} />
             <div>

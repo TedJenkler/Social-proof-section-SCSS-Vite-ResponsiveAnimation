@@ -24,17 +24,20 @@
     border-radius: 8px;
     box-sizing: border-box;
     transition: left 0.5s ease;
+
     div {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 0.986rem;
         width: 100%;
+
         img {
             height: 1rem;
             width: 1rem;
         }
     }
+
     h2 {
         margin: 0;
         font-size: 1.063rem;
@@ -49,39 +52,45 @@
         display: flex;
         flex-direction: row;
         padding: 0 6.25rem;
+
         div {
             display: flex;
             flex-direction: column;
             align-items: start;
             justify-content: center;
             width: 50%;
+
             h1 {
                 text-align: start;
                 margin-right: 7.5rem;
                 margin-bottom: 0;
             }
+
             p {
                 text-align: start;
             }
         }
-        .ratingcontainer {
+    }
+
+    .ratingcontainer {
+        display: flex;
+        align-items: start;
+
+        .rating {
             display: flex;
+            gap: 0;
+            flex-direction: row;
+            justify-content: center;
             align-items: center;
-            .rating {
+            width: 27.813rem;
+            height: 3.5rem;
+            padding: 0 2rem;
+
+            div {
                 display: flex;
-                gap: 0;
                 flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                width: 27.813rem;
-                height: 3.5rem;
-                padding: 0 2rem;
-                div {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    width: 7.284rem;
-                }
+                justify-content: start;
+                width: 7.284rem;
             }
         }
     }
@@ -94,17 +103,25 @@
     #r2 {
         left: 0;
     }
+
     #r3 {
         left: 0;
     }
 }
 
 @include breakpoint(xxlarge) {
-    #r2 {
-        left: 3rem;
-    }
+    .desktop {
+        .ratingcontainer {
+            display: flex;
+            align-items: center;
+        }
 
-    #r3 {
-        left: 6rem;
+        #r2 {
+            left: 3rem;
+        }
+
+        #r3 {
+            left: 6rem;
+        }
     }
 }
