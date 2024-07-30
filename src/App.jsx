@@ -9,12 +9,16 @@ function App() {
     <>
     <div className="bg1"></div>
     <section>
+      <div className="desktop">
+      <div>
       <h1>10,000+ of our users love our products.</h1>
       <p className="subtext">We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.</p>
+      </div>
       <div className="ratingcontainer">
-        <Rating stars={5} text="Rated 5 Stars in Reviews" />
-        <Rating stars={5} text="Rated 5 Stars in Report Guru"/>
-        <Rating stars={5} text="Rated 5 Stars in BestTech"/>
+        <Rating id={"r1"} stars={5} text="Rated 5 Stars in Reviews" />
+        <Rating id={"r2"} stars={5} text="Rated 5 Stars in Report Guru"/>
+        <Rating id={"r3"} stars={5} text="Rated 5 Stars in BestTech"/>
+      </div>
       </div>
       <div className="contentcontainer">
         <Content img={profile1} name="Colton Smith" verified="Verified Buyer" text="“ We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent! ”" />
