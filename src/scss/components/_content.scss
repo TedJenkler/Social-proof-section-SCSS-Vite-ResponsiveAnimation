@@ -8,6 +8,7 @@
       padding: 2.5rem 2rem 2.188rem 2rem;
       border-radius: 8px;
       color: white;
+      transition: top 0.5s ease;
   
       div {
         display: flex;
@@ -46,5 +47,24 @@
       font-weight: 500;
       margin-top: 1.438rem;
       letter-spacing: -0.3px;
+    }
+  }
+
+  @include breakpoint(xlarge) {
+    .contentcontainer {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #c1 {
+        position: relative;
+    }
+
+    #c2 {
+        position: relative;
+    }
+
+    #c3 {
+        position: relative;
     }
   }
