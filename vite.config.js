@@ -4,6 +4,7 @@ import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
   plugins: [react()],
+  base: "/Social-proof-section-SCSS-Vite-ResponsiveAnimation/",
   css: {
     preprocessorOptions: {
       scss: {

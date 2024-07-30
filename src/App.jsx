@@ -26,6 +26,7 @@ function App() {
         <Content id={"c3"} img={profile3} name="Anne Wallace" verified="Verified Buyer" text="“ Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone! ”" />
       </div>
     </section>
+    <div className="bg2"></div>
     </>
   )
 }
